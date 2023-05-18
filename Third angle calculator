@@ -15,7 +15,7 @@ do
     {
         b = get_int("what is angle b? ");
     }
-    while (b < 1 || b > 179-a);
+    while (b < 1 || b > 179-a); // same as above but this time substracts a from max degrees for correct math
 
 
 printf("Angle c is exactly %i° \n", 180 - a - b); // outputs correct math
