@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main(void)
+{
+    int f = get_int("what is the temperature in Fahrenheit? ");
+    const double c = (f - 32) / 1.8;
+
+        printf("That converts to exactly %f° \n", c);
+
+}
