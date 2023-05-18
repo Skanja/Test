@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <cs50.h>
+
+int main()
+{
+int a;
+do
+  {
+  a = get_int("what is angle a? ");
+  }
+  while (a < 1 || a > 178); // returns if A is bigger than 178 and if is less than 1
+
+  int b;
+  do
+    {
+        b = get_int("what is angle b? ");
+    }
+    while (b < 1 || b > 179-a);
+
+
+printf("Angle c is exactly %i° \n", 180 - a - b); // outputs correct math
+}
