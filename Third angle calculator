@@ -3,28 +3,27 @@
 
 int main()
 {
-int a;
-do
-{
-a = get_int("what is angle a? ");
-if (a < 1 || a > 178)
-        {
-            printf("you're doing it wrong mate \n");
-        }
-}
-while (a < 1 || a > 178); // returns if A is bigger than 178 and if is less than 1
-
-    int b;
+    int a;
     do
     {
-        b = get_int("what is angle b? ");
-        if (b < 1 || b > 179-a)
+    a = get_int("what is angle a? ");
+    if (a < 1 || a > 178)
         {
             printf("you're doing it wrong mate \n");
         }
     }
-    while (b < 1 || b > 179-a); // same as above but this time substracts a from max degrees for correct math
+    while (a < 1 || a > 178); // returns if A is bigger than 178 and if is less than 1
 
+        int b;
+        do
+        {
+         b = get_int("what is angle b? ");
+         if (b < 1 || b > 179-a)
+            {
+                printf("you're doing it wrong mate \n");
+            }
+        }
+        while (b < 1 || b > 179-a); // same as above but this time substracts a from max degrees for correct math
 
-    printf("Angle c is exactly %i° \n", 180 - a - b); // outputs correct math
+        printf("Angle c is exactly %i° \n", 180 - a - b); // outputs correct math
 }
